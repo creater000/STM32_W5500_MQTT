@@ -23,9 +23,9 @@
 
 if ($debugfile -eq "")
 {
-& "C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.0\common\bin\cspybat" -f "C:\Users\hongt\Downloads\STM32F1_TEMPLATE_PROJECT-master\STM32F1_TEMPLATE_PROJECT-master\EWARM\settings\STM32F1_W5500_MQTT.Debug.general.xcl" --backend -f "C:\Users\hongt\Downloads\STM32F1_TEMPLATE_PROJECT-master\STM32F1_TEMPLATE_PROJECT-master\EWARM\settings\STM32F1_W5500_MQTT.Debug.driver.xcl" 
+& "C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.0\common\bin\cspybat" -f "D:\1.PKH\1.Project\16.STM32F1_W5500\1.Source\STM32_W5500_MQTT\EWARM\settings\STM32F1_W5500_MQTT.Debug.general.xcl" --backend -f "D:\1.PKH\1.Project\16.STM32F1_W5500\1.Source\STM32_W5500_MQTT\EWARM\settings\STM32F1_W5500_MQTT.Debug.driver.xcl" 
 }
 else
 {
-& "C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.0\common\bin\cspybat" -f "C:\Users\hongt\Downloads\STM32F1_TEMPLATE_PROJECT-master\STM32F1_TEMPLATE_PROJECT-master\EWARM\settings\STM32F1_W5500_MQTT.Debug.general.xcl" --debug_file=$debugfile --backend -f "C:\Users\hongt\Downloads\STM32F1_TEMPLATE_PROJECT-master\STM32F1_TEMPLATE_PROJECT-master\EWARM\settings\STM32F1_W5500_MQTT.Debug.driver.xcl" 
+& "C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.0\common\bin\cspybat" -f "D:\1.PKH\1.Project\16.STM32F1_W5500\1.Source\STM32_W5500_MQTT\EWARM\settings\STM32F1_W5500_MQTT.Debug.general.xcl" --debug_file=$debugfile --backend -f "D:\1.PKH\1.Project\16.STM32F1_W5500\1.Source\STM32_W5500_MQTT\EWARM\settings\STM32F1_W5500_MQTT.Debug.driver.xcl" 
 }
