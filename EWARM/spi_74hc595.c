@@ -39,5 +39,9 @@ void init_gpio_spi()
   GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AF_PP;
   GPIO_Init(SPI_MASTER_GPIO, &GPIO_InitStructure);
   
-  
+  // pin cs
+  GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
+  GPIO_InitStructure.GPIO_Pin = SPI_MASTER_PIN_CS;
+  GPIO_InitStructure.GPIO_Mode = GPIO_Mode_Out_PP;
+  GPIO_Init(SPI_MASTER_GPIO,&GPIO_InitStructure);
 }

@@ -7,6 +7,8 @@
 #define SPI_MASTER_PIN_SCK            GPIO_Pin_13
 #define SPI_MASTER_PIN_MISO           GPIO_Pin_14
 #define SPI_MASTER_PIN_MOSI           GPIO_Pin_15 
+#define SPI_MASTER_PIN_CS             GPIO_Pin_12 
+
 #define SPI_MASTER_IRQn               SPI2_IRQn
 
 void init_spi2();
