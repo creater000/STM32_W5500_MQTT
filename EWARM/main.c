@@ -163,7 +163,26 @@ int main(void)
   pin_cs_high();
   while(1)
   {
-    SPI_I2S_SendData(SPI_MASTER,0xAA);  
+//    pin_cs_low();
+//    SPI_I2S_SendData(SPI_MASTER,0xFF);
+//    delay(1000);
+//    SPI_I2S_SendData(SPI_MASTER,0xFF);
+//    delay(1000);
+//    SPI_I2S_SendData(SPI_MASTER,0xFF);
+//    delay(1000);
+//    pin_cs_high();    
+//    delay(1000000);
+//    pin_cs_low();
+//    SPI_I2S_SendData(SPI_MASTER,0x00);
+//    delay(1000);
+//    SPI_I2S_SendData(SPI_MASTER,0x00);
+//    delay(1000);
+//    SPI_I2S_SendData(SPI_MASTER,0x00);
+//    delay(1000);
+//    pin_cs_high();
+//    delay(1000000);
+    display_number(999);
+    
   }
   printf("USART initialized.\n\r");
   init_LED_output();

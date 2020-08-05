@@ -1,6 +1,21 @@
 #include "stm32f10x.h"
 #include "spi_74hc595.h"
 
+uint32_t table_number_segment[12] = 
+{
+  0x3F,//0
+  0x06,//1
+  0x5B,//2
+  0x4F,//3
+  0x66,//4
+  0x6D,//5
+  0x7D,//6
+  0x07,//7
+  0x7F,//8
+  0x6F,//9
+  0x00,//off
+  0x40,//-           
+};
 
 SPI_InitTypeDef SPI_InitStructure;
 
@@ -52,4 +67,24 @@ void pin_cs_high()
 void pin_cs_low()
 {
   GPIO_ResetBits(SPI_MASTER_GPIO, SPI_MASTER_PIN_CS);
+}
+
+void display_number(uint32_t ui32_number)
+{
+  if((ui32_number>=0)||(ui32_number<=999))
+  {
+    pin_cs_low();
+    SPI_I2S_SendData(SPI_MASTER,table_number_segment[ui32_number%10]);
+    delay(1000);
+    SPI_I2S_SendData(SPI_MASTER,table_number_segment[(ui32_number/10)%10]);
+    delay(1000);
+    SPI_I2S_SendData(SPI_MASTER,table_number_segment[ui32_number/100]);
+    delay(1000);
+    pin_cs_high(); 
+  }
+  else
+  {
+    ui32_number = 0;
+  }
+
 }

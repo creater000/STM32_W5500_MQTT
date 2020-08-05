@@ -15,3 +15,4 @@ void init_spi2();
 void init_gpio_spi();
 void pin_cs_high();
 void pin_cs_low();
+void display_number(uint32_t ui32_number);
