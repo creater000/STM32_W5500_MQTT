@@ -12,3 +12,5 @@
 #define USER_SERVER                     "ftsbemsl"
 #define PASS_SERVER                     "1geoCO_ewkwg"
 #define PORT_SERVER                     10923
+
+void delay(uint32_t ui32_time);

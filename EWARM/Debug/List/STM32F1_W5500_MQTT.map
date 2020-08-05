@@ -1,6 +1,6 @@
 ###############################################################################
 #
-# IAR ELF Linker V8.20.1.14183/W32 for ARM                05/Aug/2020  15:05:33
+# IAR ELF Linker V8.20.1.14183/W32 for ARM                05/Aug/2020  15:11:21
 # Copyright 2007-2017 IAR Systems AB.
 #
 #    Output file  =  
@@ -10,7 +10,7 @@
 #        G:\Onedrive\OneDrive - Hue Industrial
 #        College\1.PKH\1.Project\16.STM32F1_W5500\1.Source\STM32_W5500_MQTT\EWARM\Debug\List\STM32F1_W5500_MQTT.map
 #    Command line =  
-#        -f C:\Users\hongt\AppData\Local\Temp\EW46FD.tmp ("G:\Onedrive\OneDrive
+#        -f C:\Users\hongt\AppData\Local\Temp\EW97E5.tmp ("G:\Onedrive\OneDrive
 #        - Hue Industrial
 #        College\1.PKH\1.Project\16.STM32F1_W5500\1.Source\STM32_W5500_MQTT\EWARM\Debug\Obj\core_cm3.o"
 #        "G:\Onedrive\OneDrive - Hue Industrial
@@ -167,30 +167,26 @@ initialize by copy { rw };
   .intvec            ro code  0x08000000  0x150  startup_stm32f10x_cl.o [1]
                             - 0x08000150  0x150
 
-"P1":                                     0x715
+"P1":                                     0x725
   .text              ro code  0x08000150   0xfc  system_stm32f10x.o [1]
   .text              ro code  0x0800024c   0xe0  stm32f10x_rcc.o [1]
   .text              ro code  0x0800032c   0xc6  stm32f10x_usart.o [1]
-  .text              ro code  0x080003f4   0xa4  spi_74hc595.o [1]
-  .text              ro code  0x08000498   0x74  stm32f10x_spi.o [1]
-  .text              ro code  0x0800050c   0x9a  stm32f10x_gpio.o [1]
-  .text              ro code  0x080005a8   0x88  uart_debug.o [1]
-  .text              ro code  0x08000630   0x38  packbits_init_single.o [5]
-  .text              ro code  0x08000668   0x28  main.o [1]
-  .text              ro code  0x08000690   0x28  data_init.o [5]
-  .iar.init_table    const    0x080006b8   0x10  - Linker created -
-  .text              ro code  0x080006c8   0x1e  cmain.o [5]
-  .text              ro code  0x080006e6    0x4  low_level_init.o [3]
-  .text              ro code  0x080006ea    0x4  exit.o [3]
-  .text              ro code  0x080006f0    0xa  cexit.o [5]
-  .text              ro code  0x080006fc   0x14  exit.o [6]
-  .text              ro code  0x08000710   0x10  mqtt_interface.o [1]
-  .text              ro code  0x08000720   0x10  startup_stm32f10x_cl.o [1]
-  .text              ro code  0x08000730    0xc  cstartup_M.o [5]
-  .text              ro code  0x0800073c    0x4  startup_stm32f10x_cl.o [1]
-  .text              ro code  0x08000740    0x4  startup_stm32f10x_cl.o [1]
-  .text              ro code  0x08000744    0x4  startup_stm32f10x_cl.o [1]
-  .text              ro code  0x08000748    0x4  startup_stm32f10x_cl.o [1]
+  .text              ro code  0x080003f4   0xac  spi_74hc595.o [1]
+  .text              ro code  0x080004a0   0x74  stm32f10x_spi.o [1]
+  .text              ro code  0x08000514   0x9e  stm32f10x_gpio.o [1]
+  .text              ro code  0x080005b4   0x88  uart_debug.o [1]
+  .text              ro code  0x0800063c   0x38  packbits_init_single.o [5]
+  .text              ro code  0x08000674   0x2c  main.o [1]
+  .text              ro code  0x080006a0   0x28  data_init.o [5]
+  .iar.init_table    const    0x080006c8   0x10  - Linker created -
+  .text              ro code  0x080006d8   0x1e  cmain.o [5]
+  .text              ro code  0x080006f6    0x4  low_level_init.o [3]
+  .text              ro code  0x080006fa    0x4  exit.o [3]
+  .text              ro code  0x08000700    0xa  cexit.o [5]
+  .text              ro code  0x0800070c   0x14  exit.o [6]
+  .text              ro code  0x08000720   0x10  mqtt_interface.o [1]
+  .text              ro code  0x08000730   0x10  startup_stm32f10x_cl.o [1]
+  .text              ro code  0x08000740    0xc  cstartup_M.o [5]
   .text              ro code  0x0800074c    0x4  startup_stm32f10x_cl.o [1]
   .text              ro code  0x08000750    0x4  startup_stm32f10x_cl.o [1]
   .text              ro code  0x08000754    0x4  startup_stm32f10x_cl.o [1]
@@ -256,9 +252,13 @@ initialize by copy { rw };
   .text              ro code  0x08000844    0x4  startup_stm32f10x_cl.o [1]
   .text              ro code  0x08000848    0x4  startup_stm32f10x_cl.o [1]
   .text              ro code  0x0800084c    0x4  startup_stm32f10x_cl.o [1]
-  .rodata            const    0x08000850    0x0  packbits_init_single.o [5]
-  Initializer bytes  const    0x08000850   0x15  <for P2-1>
-                            - 0x08000865  0x715
+  .text              ro code  0x08000850    0x4  startup_stm32f10x_cl.o [1]
+  .text              ro code  0x08000854    0x4  startup_stm32f10x_cl.o [1]
+  .text              ro code  0x08000858    0x4  startup_stm32f10x_cl.o [1]
+  .text              ro code  0x0800085c    0x4  startup_stm32f10x_cl.o [1]
+  .rodata            const    0x08000860    0x0  packbits_init_single.o [5]
+  Initializer bytes  const    0x08000860   0x15  <for P2-1>
+                            - 0x08000875  0x725
 
 "P2", part 1 of 2:                         0x2c
   P2-1                        0x20000000   0x2c  <Init block>
@@ -281,7 +281,7 @@ initialize by copy { rw };
           -------     ----
 Copy/packbits (__iar_packbits_init_single3)
     1 source range, total size 0x15 (47% of destination):
-          0x08000850  0x15
+          0x08000860  0x15
     1 destination range, total size 0x2c:
           0x20000000  0x2c
 
@@ -294,18 +294,18 @@ Copy/packbits (__iar_packbits_init_single3)
     Module                  ro code  ro data  rw data
     ------                  -------  -------  -------
 G:\Onedrive\OneDrive - Hue Industrial College\1.PKH\1.Project\16.STM32F1_W5500\1.Source\STM32_W5500_MQTT\EWARM\Debug\Obj: [1]
-    main.o                       40
+    main.o                       44
     mqtt_interface.o             16        2        4
-    spi_74hc595.o               164       10       20
+    spi_74hc595.o               172       10       20
     startup_stm32f10x_cl.o      628
-    stm32f10x_gpio.o            154
+    stm32f10x_gpio.o            158
     stm32f10x_rcc.o             224        9       20
     stm32f10x_spi.o             116
     stm32f10x_usart.o           198
     system_stm32f10x.o          252
     uart_debug.o                136
     -------------------------------------------------
-    Total:                    1 928       21       44
+    Total:                    1 944       21       44
 
 command line: [2]
     -------------------------------------------------
@@ -338,7 +338,7 @@ shb_l.a: [6]
     Gaps                          8
     Linker created                        16    1 024
 -----------------------------------------------------
-    Grand Total:              2 112       37    1 068
+    Grand Total:              2 128       37    1 068
 
 
 *******************************************************************************
@@ -347,50 +347,52 @@ shb_l.a: [6]
 
 Entry                      Address  Size  Type      Object
 -----                      -------  ----  ----      ------
-.iar.init_table$$Base   0x080006b8         --   Gb  - Linker created -
-.iar.init_table$$Limit  0x080006c8         --   Gb  - Linker created -
-?main                   0x080006c9        Code  Gb  cmain.o [5]
+.iar.init_table$$Base   0x080006c8         --   Gb  - Linker created -
+.iar.init_table$$Limit  0x080006d8         --   Gb  - Linker created -
+?main                   0x080006d9        Code  Gb  cmain.o [5]
 ADCPrescTable           0x20000010   0x4  Data  Lc  stm32f10x_rcc.o [1]
 APBAHBPrescTable        0x20000000  0x10  Data  Lc  stm32f10x_rcc.o [1]
 CSTACK$$Base            0x20000030         --   Gb  - Linker created -
 CSTACK$$Limit           0x20000430         --   Gb  - Linker created -
-GPIO_Init               0x0800050d  0x9a  Code  Gb  stm32f10x_gpio.o [1]
+GPIO_Init               0x08000515  0x9a  Code  Gb  stm32f10x_gpio.o [1]
+GPIO_SetBits            0x080005af   0x4  Code  Gb  stm32f10x_gpio.o [1]
 MilliTimer              0x20000014   0x4  Data  Gb  mqtt_interface.o [1]
 RCC_APB1PeriphClockCmd  0x080002fd  0x16  Code  Gb  stm32f10x_rcc.o [1]
 RCC_APB2PeriphClockCmd  0x080002e7  0x16  Code  Gb  stm32f10x_rcc.o [1]
 RCC_GetClocksFreq       0x0800025d  0x8a  Code  Gb  stm32f10x_rcc.o [1]
 RCC_PCLK2Config         0x0800024d  0x10  Code  Gb  stm32f10x_rcc.o [1]
-Region$$Table$$Base     0x080006b8         --   Gb  - Linker created -
-Region$$Table$$Limit    0x080006c8         --   Gb  - Linker created -
-SPI_Cmd                 0x080004d1  0x1a  Code  Gb  stm32f10x_spi.o [1]
-SPI_I2S_ITConfig        0x080004eb  0x1e  Code  Gb  stm32f10x_spi.o [1]
-SPI_I2S_SendData        0x08000509   0x4  Code  Gb  stm32f10x_spi.o [1]
-SPI_Init                0x08000499  0x38  Code  Gb  stm32f10x_spi.o [1]
+Region$$Table$$Base     0x080006c8         --   Gb  - Linker created -
+Region$$Table$$Limit    0x080006d8         --   Gb  - Linker created -
+SPI_Cmd                 0x080004d9  0x1a  Code  Gb  stm32f10x_spi.o [1]
+SPI_I2S_ITConfig        0x080004f3  0x1e  Code  Gb  stm32f10x_spi.o [1]
+SPI_I2S_SendData        0x08000511   0x4  Code  Gb  stm32f10x_spi.o [1]
+SPI_Init                0x080004a1  0x38  Code  Gb  stm32f10x_spi.o [1]
 SPI_InitStructure       0x20000018  0x14  Data  Gb  spi_74hc595.o [1]
 SetSysClock             0x08000191   0x2  Code  Lc  system_stm32f10x.o [1]
 SetSysClockTo72         0x08000193  0xa4  Code  Lc  system_stm32f10x.o [1]
-SysTick_Handler         0x08000711   0xa  Code  Gb  mqtt_interface.o [1]
+SysTick_Handler         0x08000721   0xa  Code  Gb  mqtt_interface.o [1]
 SystemInit              0x08000151  0x40  Code  Gb  system_stm32f10x.o [1]
-USART1Initialze         0x080005a9  0x80  Code  Gb  uart_debug.o [1]
+USART1Initialze         0x080005b5  0x80  Code  Gb  uart_debug.o [1]
 USART_Cmd               0x080003d9  0x1a  Code  Gb  stm32f10x_usart.o [1]
 USART_Init              0x0800032d  0xa4  Code  Gb  stm32f10x_usart.o [1]
-__cmain                 0x080006c9        Code  Gb  cmain.o [5]
-__exit                  0x080006fd  0x14  Code  Gb  exit.o [6]
-__iar_data_init3        0x08000691  0x28  Code  Gb  data_init.o [5]
+__cmain                 0x080006d9        Code  Gb  cmain.o [5]
+__exit                  0x0800070d  0x14  Code  Gb  exit.o [6]
+__iar_data_init3        0x080006a1  0x28  Code  Gb  data_init.o [5]
 __iar_packbits_init_single3
-                        0x08000631  0x38  Code  Gb  packbits_init_single.o [5]
-__iar_program_start     0x08000731        Code  Gb  cstartup_M.o [5]
+                        0x0800063d  0x38  Code  Gb  packbits_init_single.o [5]
+__iar_program_start     0x08000741        Code  Gb  cstartup_M.o [5]
 __iar_systems$$module {Abs}
                         0x00000001        Data  Gb  command line/config [2]
-__low_level_init        0x080006e7   0x4  Code  Gb  low_level_init.o [3]
+__low_level_init        0x080006f7   0x4  Code  Gb  low_level_init.o [3]
 __vector_table          0x08000000        Data  Gb  startup_stm32f10x_cl.o [1]
-_call_main              0x080006d5        Code  Gb  cmain.o [5]
-_exit                   0x080006f1        Code  Gb  cexit.o [5]
-_main                   0x080006e3        Code  Gb  cmain.o [5]
-exit                    0x080006eb   0x4  Code  Gb  exit.o [3]
-init_gpio_spi           0x0800043d  0x50  Code  Gb  spi_74hc595.o [1]
-init_spi2               0x080003f5  0x48  Code  Gb  spi_74hc595.o [1]
-main                    0x08000669  0x20  Code  Gb  main.o [1]
+_call_main              0x080006e5        Code  Gb  cmain.o [5]
+_exit                   0x08000701        Code  Gb  cexit.o [5]
+_main                   0x080006f3        Code  Gb  cmain.o [5]
+exit                    0x080006fb   0x4  Code  Gb  exit.o [3]
+init_gpio_spi           0x0800043b  0x50  Code  Gb  spi_74hc595.o [1]
+init_spi2               0x080003f5  0x46  Code  Gb  spi_74hc595.o [1]
+main                    0x08000675  0x24  Code  Gb  main.o [1]
+pin_cs_high             0x0800048b   0xa  Code  Gb  spi_74hc595.o [1]
 
 
 [1] = G:\Onedrive\OneDrive - Hue Industrial College\1.PKH\1.Project\16.STM32F1_W5500\1.Source\STM32_W5500_MQTT\EWARM\Debug\Obj
@@ -400,7 +402,7 @@ main                    0x08000669  0x20  Code  Gb  main.o [1]
 [5] = rt7M_tl.a
 [6] = shb_l.a
 
-  2 112 bytes of readonly  code memory
+  2 128 bytes of readonly  code memory
      37 bytes of readonly  data memory
   1 068 bytes of readwrite data memory
 

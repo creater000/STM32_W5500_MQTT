@@ -11,9 +11,9 @@ void init_spi2()
   SPI_InitStructure.SPI_Mode = SPI_Mode_Master;
   SPI_InitStructure.SPI_DataSize = SPI_DataSize_8b;
   SPI_InitStructure.SPI_CPOL = SPI_CPOL_Low;
-  SPI_InitStructure.SPI_CPHA = SPI_CPHA_2Edge;
+  SPI_InitStructure.SPI_CPHA = SPI_CPHA_1Edge;
   SPI_InitStructure.SPI_NSS = SPI_NSS_Soft;
-  SPI_InitStructure.SPI_BaudRatePrescaler = SPI_BaudRatePrescaler_4;
+  SPI_InitStructure.SPI_BaudRatePrescaler = SPI_BaudRatePrescaler_32;
   SPI_InitStructure.SPI_FirstBit = SPI_FirstBit_MSB;
   SPI_InitStructure.SPI_CRCPolynomial = 7;
   SPI_Init(SPI_MASTER, &SPI_InitStructure);
@@ -44,4 +44,12 @@ void init_gpio_spi()
   GPIO_InitStructure.GPIO_Pin = SPI_MASTER_PIN_CS;
   GPIO_InitStructure.GPIO_Mode = GPIO_Mode_Out_PP;
   GPIO_Init(SPI_MASTER_GPIO,&GPIO_InitStructure);
+}
+void pin_cs_high()
+{
+  GPIO_SetBits(SPI_MASTER_GPIO, SPI_MASTER_PIN_CS);
+}
+void pin_cs_low()
+{
+  GPIO_ResetBits(SPI_MASTER_GPIO, SPI_MASTER_PIN_CS);
 }

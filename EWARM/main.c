@@ -22,6 +22,7 @@
 
 
 
+
 extern uint32_t ui32_len_buffer_control;
 extern char buffer_control[LEN_BUFFER_CONTROL];
 extern uint32_t is_process_data;
@@ -159,6 +160,7 @@ int main(void)
   
   init_gpio_spi();
   init_spi2();
+  pin_cs_high();
   while(1)
   {
     SPI_I2S_SendData(SPI_MASTER,0xAA);  
@@ -226,5 +228,15 @@ int main(void)
     }
     MQTTYield(&c, 1000);
     process_message_control();
+  }
+}
+
+
+void delay(uint32_t ui32_time)
+{
+  uint32_t i = 0;
+  for(i=0;i<ui32_time;i++)
+  {
+      
   }
 }
