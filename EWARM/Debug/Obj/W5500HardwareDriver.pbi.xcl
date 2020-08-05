@@ -1,40 +1,40 @@
-"C:\Users\hongt\Downloads\STM32F1_TEMPLATE_PROJECT-master\STM32F1_TEMPLATE_PROJECT-master\user\W5500HardwareDriver.c"
+"G:\Onedrive\OneDrive - Hue Industrial College\1.PKH\1.Project\16.STM32F1_W5500\1.Source\STM32_W5500_MQTT\user\W5500HardwareDriver.c"
 -std=c11
 -ferror-limit=0
 -I
-C:\Users\hongt\Downloads\STM32F1_TEMPLATE_PROJECT-master\STM32F1_TEMPLATE_PROJECT-master\EWARM
+G:\Onedrive\OneDrive - Hue Industrial College\1.PKH\1.Project\16.STM32F1_W5500\1.Source\STM32_W5500_MQTT\EWARM
 -I
-C:\Users\hongt\Downloads\STM32F1_TEMPLATE_PROJECT-master\STM32F1_TEMPLATE_PROJECT-master\EWARM\Debug
+G:\Onedrive\OneDrive - Hue Industrial College\1.PKH\1.Project\16.STM32F1_W5500\1.Source\STM32_W5500_MQTT\EWARM\Debug
 -I
-C:\Users\hongt\Downloads\STM32F1_TEMPLATE_PROJECT-master\STM32F1_TEMPLATE_PROJECT-master\EWARM\settings
+G:\Onedrive\OneDrive - Hue Industrial College\1.PKH\1.Project\16.STM32F1_W5500\1.Source\STM32_W5500_MQTT\EWARM\settings
 -I
-C:\Users\hongt\Downloads\STM32F1_TEMPLATE_PROJECT-master\STM32F1_TEMPLATE_PROJECT-master\EWARM\..
+G:\Onedrive\OneDrive - Hue Industrial College\1.PKH\1.Project\16.STM32F1_W5500\1.Source\STM32_W5500_MQTT\EWARM\..
 -I
-C:\Users\hongt\Downloads\STM32F1_TEMPLATE_PROJECT-master\STM32F1_TEMPLATE_PROJECT-master\EWARM\..\CMSIS
+G:\Onedrive\OneDrive - Hue Industrial College\1.PKH\1.Project\16.STM32F1_W5500\1.Source\STM32_W5500_MQTT\EWARM\..\CMSIS
 -I
-C:\Users\hongt\Downloads\STM32F1_TEMPLATE_PROJECT-master\STM32F1_TEMPLATE_PROJECT-master\EWARM\..\Manual_Config
+G:\Onedrive\OneDrive - Hue Industrial College\1.PKH\1.Project\16.STM32F1_W5500\1.Source\STM32_W5500_MQTT\EWARM\..\Manual_Config
 -I
-C:\Users\hongt\Downloads\STM32F1_TEMPLATE_PROJECT-master\STM32F1_TEMPLATE_PROJECT-master\EWARM\..\Std_Periph
+G:\Onedrive\OneDrive - Hue Industrial College\1.PKH\1.Project\16.STM32F1_W5500\1.Source\STM32_W5500_MQTT\EWARM\..\Std_Periph
 -I
-C:\Users\hongt\Downloads\STM32F1_TEMPLATE_PROJECT-master\STM32F1_TEMPLATE_PROJECT-master\EWARM\..\user
+G:\Onedrive\OneDrive - Hue Industrial College\1.PKH\1.Project\16.STM32F1_W5500\1.Source\STM32_W5500_MQTT\EWARM\..\user
 -I
-C:\Users\hongt\Downloads\STM32F1_TEMPLATE_PROJECT-master\STM32F1_TEMPLATE_PROJECT-master\EWARM\..\ioLibrary_Driver
+G:\Onedrive\OneDrive - Hue Industrial College\1.PKH\1.Project\16.STM32F1_W5500\1.Source\STM32_W5500_MQTT\EWARM\..\ioLibrary_Driver
 -I
-C:\Users\hongt\Downloads\STM32F1_TEMPLATE_PROJECT-master\STM32F1_TEMPLATE_PROJECT-master\EWARM\..\ioLibrary_Driver\Ethernet
+G:\Onedrive\OneDrive - Hue Industrial College\1.PKH\1.Project\16.STM32F1_W5500\1.Source\STM32_W5500_MQTT\EWARM\..\ioLibrary_Driver\Ethernet
 -I
-C:\Users\hongt\Downloads\STM32F1_TEMPLATE_PROJECT-master\STM32F1_TEMPLATE_PROJECT-master\EWARM\..\ioLibrary_Driver\Ethernet\W5500
+G:\Onedrive\OneDrive - Hue Industrial College\1.PKH\1.Project\16.STM32F1_W5500\1.Source\STM32_W5500_MQTT\EWARM\..\ioLibrary_Driver\Ethernet\W5500
 -I
-C:\Users\hongt\Downloads\STM32F1_TEMPLATE_PROJECT-master\STM32F1_TEMPLATE_PROJECT-master\EWARM\..\MQTTPacket\src
+G:\Onedrive\OneDrive - Hue Industrial College\1.PKH\1.Project\16.STM32F1_W5500\1.Source\STM32_W5500_MQTT\EWARM\..\MQTTPacket\src
 -I
-C:\Users\hongt\Downloads\STM32F1_TEMPLATE_PROJECT-master\STM32F1_TEMPLATE_PROJECT-master\EWARM\..\stdio
+G:\Onedrive\OneDrive - Hue Industrial College\1.PKH\1.Project\16.STM32F1_W5500\1.Source\STM32_W5500_MQTT\EWARM\..\stdio
 -I
-C:\Users\hongt\Downloads\STM32F1_TEMPLATE_PROJECT-master\STM32F1_TEMPLATE_PROJECT-master\EWARM\..\ioLibrary_Driver\Internet\DHCP
+G:\Onedrive\OneDrive - Hue Industrial College\1.PKH\1.Project\16.STM32F1_W5500\1.Source\STM32_W5500_MQTT\EWARM\..\ioLibrary_Driver\Internet\DHCP
 -I
-C:\Users\hongt\Downloads\STM32F1_TEMPLATE_PROJECT-master\STM32F1_TEMPLATE_PROJECT-master\EWARM\..\output_control
+G:\Onedrive\OneDrive - Hue Industrial College\1.PKH\1.Project\16.STM32F1_W5500\1.Source\STM32_W5500_MQTT\EWARM\..\output_control
 -I
-C:\Users\hongt\Downloads\STM32F1_TEMPLATE_PROJECT-master\STM32F1_TEMPLATE_PROJECT-master\EWARM\..\processString
+G:\Onedrive\OneDrive - Hue Industrial College\1.PKH\1.Project\16.STM32F1_W5500\1.Source\STM32_W5500_MQTT\EWARM\..\processString
 -I
-C:\Users\hongt\Downloads\STM32F1_TEMPLATE_PROJECT-master\STM32F1_TEMPLATE_PROJECT-master\EWARM\..\uart_debug
+G:\Onedrive\OneDrive - Hue Industrial College\1.PKH\1.Project\16.STM32F1_W5500\1.Source\STM32_W5500_MQTT\EWARM\..\uart_debug
 -I
 C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.0\arm\CMSIS\Include
 -I
@@ -42,39 +42,39 @@ C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.0\arm\inc
 -I
 C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.0\arm\inc\c
 -I
-C:\Users\hongt\Downloads\STM32F1_TEMPLATE_PROJECT-master\STM32F1_TEMPLATE_PROJECT-master\EWARM
+G:\Onedrive\OneDrive - Hue Industrial College\1.PKH\1.Project\16.STM32F1_W5500\1.Source\STM32_W5500_MQTT\EWARM
 -I
-C:\Users\hongt\Downloads\STM32F1_TEMPLATE_PROJECT-master\STM32F1_TEMPLATE_PROJECT-master\EWARM\Debug
+G:\Onedrive\OneDrive - Hue Industrial College\1.PKH\1.Project\16.STM32F1_W5500\1.Source\STM32_W5500_MQTT\EWARM\Debug
 -I
-C:\Users\hongt\Downloads\STM32F1_TEMPLATE_PROJECT-master\STM32F1_TEMPLATE_PROJECT-master\EWARM\settings
+G:\Onedrive\OneDrive - Hue Industrial College\1.PKH\1.Project\16.STM32F1_W5500\1.Source\STM32_W5500_MQTT\EWARM\settings
 -I
-C:\Users\hongt\Downloads\STM32F1_TEMPLATE_PROJECT-master\STM32F1_TEMPLATE_PROJECT-master
+G:\Onedrive\OneDrive - Hue Industrial College\1.PKH\1.Project\16.STM32F1_W5500\1.Source\STM32_W5500_MQTT
 -I
-C:\Users\hongt\Downloads\STM32F1_TEMPLATE_PROJECT-master\STM32F1_TEMPLATE_PROJECT-master\CMSIS
+G:\Onedrive\OneDrive - Hue Industrial College\1.PKH\1.Project\16.STM32F1_W5500\1.Source\STM32_W5500_MQTT\CMSIS
 -I
-C:\Users\hongt\Downloads\STM32F1_TEMPLATE_PROJECT-master\STM32F1_TEMPLATE_PROJECT-master\Manual_Config
+G:\Onedrive\OneDrive - Hue Industrial College\1.PKH\1.Project\16.STM32F1_W5500\1.Source\STM32_W5500_MQTT\Manual_Config
 -I
-C:\Users\hongt\Downloads\STM32F1_TEMPLATE_PROJECT-master\STM32F1_TEMPLATE_PROJECT-master\Std_Periph
+G:\Onedrive\OneDrive - Hue Industrial College\1.PKH\1.Project\16.STM32F1_W5500\1.Source\STM32_W5500_MQTT\Std_Periph
 -I
-C:\Users\hongt\Downloads\STM32F1_TEMPLATE_PROJECT-master\STM32F1_TEMPLATE_PROJECT-master\user
+G:\Onedrive\OneDrive - Hue Industrial College\1.PKH\1.Project\16.STM32F1_W5500\1.Source\STM32_W5500_MQTT\user
 -I
-C:\Users\hongt\Downloads\STM32F1_TEMPLATE_PROJECT-master\STM32F1_TEMPLATE_PROJECT-master\ioLibrary_Driver
+G:\Onedrive\OneDrive - Hue Industrial College\1.PKH\1.Project\16.STM32F1_W5500\1.Source\STM32_W5500_MQTT\ioLibrary_Driver
 -I
-C:\Users\hongt\Downloads\STM32F1_TEMPLATE_PROJECT-master\STM32F1_TEMPLATE_PROJECT-master\ioLibrary_Driver\Ethernet
+G:\Onedrive\OneDrive - Hue Industrial College\1.PKH\1.Project\16.STM32F1_W5500\1.Source\STM32_W5500_MQTT\ioLibrary_Driver\Ethernet
 -I
-C:\Users\hongt\Downloads\STM32F1_TEMPLATE_PROJECT-master\STM32F1_TEMPLATE_PROJECT-master\ioLibrary_Driver\Ethernet\W5500
+G:\Onedrive\OneDrive - Hue Industrial College\1.PKH\1.Project\16.STM32F1_W5500\1.Source\STM32_W5500_MQTT\ioLibrary_Driver\Ethernet\W5500
 -I
-C:\Users\hongt\Downloads\STM32F1_TEMPLATE_PROJECT-master\STM32F1_TEMPLATE_PROJECT-master\MQTTPacket\src
+G:\Onedrive\OneDrive - Hue Industrial College\1.PKH\1.Project\16.STM32F1_W5500\1.Source\STM32_W5500_MQTT\MQTTPacket\src
 -I
-C:\Users\hongt\Downloads\STM32F1_TEMPLATE_PROJECT-master\STM32F1_TEMPLATE_PROJECT-master\stdio
+G:\Onedrive\OneDrive - Hue Industrial College\1.PKH\1.Project\16.STM32F1_W5500\1.Source\STM32_W5500_MQTT\stdio
 -I
-C:\Users\hongt\Downloads\STM32F1_TEMPLATE_PROJECT-master\STM32F1_TEMPLATE_PROJECT-master\ioLibrary_Driver\Internet\DHCP
+G:\Onedrive\OneDrive - Hue Industrial College\1.PKH\1.Project\16.STM32F1_W5500\1.Source\STM32_W5500_MQTT\ioLibrary_Driver\Internet\DHCP
 -I
-C:\Users\hongt\Downloads\STM32F1_TEMPLATE_PROJECT-master\STM32F1_TEMPLATE_PROJECT-master\output_control
+G:\Onedrive\OneDrive - Hue Industrial College\1.PKH\1.Project\16.STM32F1_W5500\1.Source\STM32_W5500_MQTT\output_control
 -I
-C:\Users\hongt\Downloads\STM32F1_TEMPLATE_PROJECT-master\STM32F1_TEMPLATE_PROJECT-master\processString
+G:\Onedrive\OneDrive - Hue Industrial College\1.PKH\1.Project\16.STM32F1_W5500\1.Source\STM32_W5500_MQTT\processString
 -I
-C:\Users\hongt\Downloads\STM32F1_TEMPLATE_PROJECT-master\STM32F1_TEMPLATE_PROJECT-master\uart_debug
+G:\Onedrive\OneDrive - Hue Industrial College\1.PKH\1.Project\16.STM32F1_W5500\1.Source\STM32_W5500_MQTT\uart_debug
 -I
 C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.0\arm\CMSIS\Include
 -D__CHAR_BITS__=8

@@ -9,6 +9,6 @@
 #define MQTT_SERVER_VERSION             4
 #define IP_SERVER                       {34, 199, 33, 81}
 #define MQTT_CHANNEL                    "/w5500_stm32_client"
-#define USER_SERVER                     "xihmpceh"
-#define PASS_SERVER                     "Vn67fpB1qkpd"
-#define PORT_SERVER                     11300
+#define USER_SERVER                     "ftsbemsl"
+#define PASS_SERVER                     "1geoCO_ewkwg"
+#define PORT_SERVER                     10923
