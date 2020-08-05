@@ -317,7 +317,7 @@
             <outputs>
                 <tool>
                     <name>ILINK</name>
-                    <file> 132 183</file>
+                    <file> 132</file>
                 </tool>
             </outputs>
         </file>
@@ -604,10 +604,6 @@
             <name>$PROJ_DIR$\Debug\Exe\STM32F1_W5500_MQTT.out</name>
             <outputs>
                 <tool>
-                    <name>ILINK</name>
-                    <file> 183</file>
-                </tool>
-                <tool>
                     <name>OBJCOPY</name>
                     <file> 166</file>
                 </tool>
@@ -615,7 +611,7 @@
             <inputs>
                 <tool>
                     <name>ILINK</name>
-                    <file> 161 221 205 123 71 222 124 189 52 116 168 62 43 54 29 206 131 186 134 282 97 268 56 25 157 109 304 196 101 164 88 100 199 226 105 158 120 110 201 141 218 292 150 224 90 96 142 83 30 89 133 214 300 20 211 149 152 36 153 130 117</file>
+                    <file> 161 221 205 123 71 222 124 189 52 116 168 62 43 54 29 206 131 186 134 282 97 268 56 25 157 109 304 196 101 164 88 100 199 226 105 158 120 110 201 141 218 292 150 224</file>
                 </tool>
             </inputs>
         </file>
