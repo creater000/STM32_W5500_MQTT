@@ -22,6 +22,7 @@
 #include "timer.h"
 
 
+extern uint32_t ui32_counter_timer2;
 
 extern uint32_t ui32_len_buffer_control;
 extern char buffer_control[LEN_BUFFER_CONTROL];
@@ -33,7 +34,7 @@ uint32_t dhcp_ret = DHCP_STOPPED;
 uint8_t buf[100]; 
 Network n;
 Client c;
-char SubString[] = "/#";
+char SubString[] = "/led_control";
 uint32_t ui32_len_message = 0;
 char message[16] = {0};
 MQTTMessage pubMessage;
@@ -159,31 +160,7 @@ int main(void)
   USART1Initialze();
   init_timer2();
   init_gpio_spi();
-  init_spi2();
-  pin_cs_high();
-  while(1)
-  {
-//    pin_cs_low();
-//    SPI_I2S_SendData(SPI_MASTER,0xFF);
-//    delay(1000);
-//    SPI_I2S_SendData(SPI_MASTER,0xFF);
-//    delay(1000);
-//    SPI_I2S_SendData(SPI_MASTER,0xFF);
-//    delay(1000);
-//    pin_cs_high();    
-//    delay(1000000);
-//    pin_cs_low();
-//    SPI_I2S_SendData(SPI_MASTER,0x00);
-//    delay(1000);
-//    SPI_I2S_SendData(SPI_MASTER,0x00);
-//    delay(1000);
-//    SPI_I2S_SendData(SPI_MASTER,0x00);
-//    delay(1000);
-//    pin_cs_high();
-//    delay(1000000);
-    
-    
-  }
+  init_spi2();  
   printf("USART initialized.\n\r");
   init_LED_output();
   init_buzzer();    
@@ -215,7 +192,7 @@ int main(void)
   MQTTPacket_connectData data = MQTTPacket_connectData_initializer;
   data.willFlag = 0;
   data.MQTTVersion = MQTT_SERVER_VERSION;
-  data.clientID.cstring = (char*)"w5500-client";
+  data.clientID.cstring = USER_SERVER;
   data.username.cstring = USER_SERVER;
   data.password.cstring = PASS_SERVER;
   data.keepAliveInterval = 60;
@@ -246,10 +223,18 @@ int main(void)
       }
     }
     MQTTYield(&c, 1000);
-    process_message_control();
+    process_message_control();   
   }
 }
 
+void pubplish()
+{
+  pubMessage.qos = QOS0;
+  pubMessage.id = mes_id++;
+  pubMessage.payloadlen = 4;
+  pubMessage.payload = "test";
+  MQTTPublish(&c,MQTT_CHANNEL, &pubMessage);
+}
 
 void delay(uint32_t ui32_time)
 {

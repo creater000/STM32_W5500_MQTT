@@ -39,7 +39,7 @@
         <stlinkfoundProbes />
     </StLinkDriver>
     <DebugChecksum>
-        <Checksum>380107384</Checksum>
+        <Checksum>2663787774</Checksum>
     </DebugChecksum>
     <Exceptions>
         <StopOnUncaught>_ 0</StopOnUncaught>
@@ -123,7 +123,7 @@
     <Breakpoints2>
         <Bp0>_ 0 "EMUL_DATA" "PHY_LINK_ON" 0 0 0 0 4294967295</Bp0>
         <Bp1>_ 0 "EMUL_CODE" "{$PROJ_DIR$\..\user\IoTEVB.c}.192.5" 0 0 1 "" 0 "" 0</Bp1>
-        <Bp2>_ 0 "EMUL_CODE" "{$PROJ_DIR$\main.c}.256.12" 0 0 1 "" 0 "" 0</Bp2>
+        <Bp2>_ 0 "EMUL_CODE" "{$PROJ_DIR$\main.c}.0.1" 0 0 1 "" 0 "" 0</Bp2>
         <Count>3</Count>
     </Breakpoints2>
     <LogFile>

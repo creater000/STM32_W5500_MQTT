@@ -16,10 +16,10 @@
 #define BUZZER_PIN			GPIO_Pin_5
  
 
-#define TURN_ON_LED                     0
-#define TURN_OFF_LED                    1
-#define TURN_ON_BUZZER                  2
-#define TURN_OFF_BUZZER                 3
+#define TURN_ON_LED                     1
+#define TURN_OFF_LED                    0
+#define SET_COUNTER                     2
+
 
 
 #define LEN_BUFFER_CONTROL             100

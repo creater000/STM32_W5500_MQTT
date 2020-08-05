@@ -63,10 +63,15 @@ void init_timer2()
 
   TIM_OC1Init(TIM2, &TIM_OCInitStructure);
 
- 
   /* TIM IT enable */
   TIM_ITConfig(TIM2, TIM_IT_CC1, ENABLE);
 
   /* TIM2 enable counter */
   TIM_Cmd(TIM2, ENABLE);
+}
+
+void disable_timer2()
+{
+  /* TIM2 enable counter */
+  TIM_Cmd(TIM2, DISABLE);
 }

@@ -11,7 +11,7 @@
 // json control:   {"CMD":x}  x is number control
 
 uint32_t ui32_value_control = 0;
-
+extern uint32_t ui32_counter_timer2;
 uint32_t ui32_len_buffer_control = 0;
 char buffer_control[LEN_BUFFER_CONTROL]={0};
 uint32_t is_process_data = false;
@@ -67,24 +67,19 @@ void process_message_control()
   {
     is_process_data = false;
     if(getValueInt(buffer_control,0,ui32_len_buffer_control,FIELD_CONTROL_OUPUT,(uint32_t *)&ui32_value_control)==EXIST_FIELD)
-    {
+    {      
       switch(ui32_value_control)
       {
-      case TURN_ON_LED:
-        turn_on_LED();
-        break;
-      case TURN_OFF_LED:
-        turn_off_LED();
-        break;
-      case TURN_ON_BUZZER:
-        turn_on_buzzer();
-        break;
-      break;
-      case TURN_OFF_BUZZER:
-        turn_off_buzzer();
-        break;
-      default:
-        break;
+        case TURN_ON_LED:
+          init_timer2();
+          break;
+        case TURN_OFF_LED:
+          disable_timer2();
+          display_number(0);
+          break;               
+        default:
+          ui32_counter_timer2 = ui32_value_control;
+          break;
       }
       
     }

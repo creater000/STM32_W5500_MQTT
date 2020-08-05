@@ -157,6 +157,7 @@ void TIM2_IRQHandler(void)
     {
       ui32_counter_timer2 = 0;
     }
+    
     display_number(ui32_counter_timer2);
     capture = TIM_GetCapture1(TIM2);
     TIM_SetCompare1(TIM2, capture + CCR1_Val);
