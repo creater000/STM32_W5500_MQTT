@@ -19,7 +19,7 @@
 #include "net_config.h"
 #include "output_control.h"
 #include "spi_74hc595.h"
-
+#include "timer.h"
 
 
 
@@ -157,7 +157,7 @@ int main(void)
   RCC_PCLK2Config(RCC_HCLK_Div2);
   /*Usart initialization for Debug.*/
   USART1Initialze();
-  
+  init_timer2();
   init_gpio_spi();
   init_spi2();
   pin_cs_high();
@@ -181,7 +181,7 @@ int main(void)
 //    delay(1000);
 //    pin_cs_high();
 //    delay(1000000);
-    display_number(999);
+    
     
   }
   printf("USART initialized.\n\r");

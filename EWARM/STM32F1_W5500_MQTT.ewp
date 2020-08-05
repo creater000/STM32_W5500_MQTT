@@ -2340,6 +2340,18 @@
             <name>$PROJ_DIR$\spi_74hc595.h</name>
         </file>
         <file>
+            <name>$PROJ_DIR$\stm32f10x_it.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\stm32f10x_it.h</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\timer.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\timer.h</name>
+        </file>
+        <file>
             <name>$PROJ_DIR$\..\user\W5500HardwareDriver.c</name>
         </file>
         <file>

@@ -1,6 +1,6 @@
 ###############################################################################
 #
-# IAR ELF Linker V8.20.1.14183/W32 for ARM                05/Aug/2020  15:26:52
+# IAR ELF Linker V8.20.1.14183/W32 for ARM                05/Aug/2020  15:56:31
 # Copyright 2007-2017 IAR Systems AB.
 #
 #    Output file  =  
@@ -10,7 +10,7 @@
 #        G:\Onedrive\OneDrive - Hue Industrial
 #        College\1.PKH\1.Project\16.STM32F1_W5500\1.Source\STM32_W5500_MQTT\EWARM\Debug\List\STM32F1_W5500_MQTT.map
 #    Command line =  
-#        -f C:\Users\hongt\AppData\Local\Temp\EWCBA1.tmp ("G:\Onedrive\OneDrive
+#        -f C:\Users\hongt\AppData\Local\Temp\EWF4EE.tmp ("G:\Onedrive\OneDrive
 #        - Hue Industrial
 #        College\1.PKH\1.Project\16.STM32F1_W5500\1.Source\STM32_W5500_MQTT\EWARM\Debug\Obj\core_cm3.o"
 #        "G:\Onedrive\OneDrive - Hue Industrial
@@ -92,6 +92,8 @@
 #        "G:\Onedrive\OneDrive - Hue Industrial
 #        College\1.PKH\1.Project\16.STM32F1_W5500\1.Source\STM32_W5500_MQTT\EWARM\Debug\Obj\stm32f10x_i2c.o"
 #        "G:\Onedrive\OneDrive - Hue Industrial
+#        College\1.PKH\1.Project\16.STM32F1_W5500\1.Source\STM32_W5500_MQTT\EWARM\Debug\Obj\stm32f10x_it.o"
+#        "G:\Onedrive\OneDrive - Hue Industrial
 #        College\1.PKH\1.Project\16.STM32F1_W5500\1.Source\STM32_W5500_MQTT\EWARM\Debug\Obj\stm32f10x_iwdg.o"
 #        "G:\Onedrive\OneDrive - Hue Industrial
 #        College\1.PKH\1.Project\16.STM32F1_W5500\1.Source\STM32_W5500_MQTT\EWARM\Debug\Obj\stm32f10x_pwr.o"
@@ -111,6 +113,8 @@
 #        College\1.PKH\1.Project\16.STM32F1_W5500\1.Source\STM32_W5500_MQTT\EWARM\Debug\Obj\stm32f10x_wwdg.o"
 #        "G:\Onedrive\OneDrive - Hue Industrial
 #        College\1.PKH\1.Project\16.STM32F1_W5500\1.Source\STM32_W5500_MQTT\EWARM\Debug\Obj\system_stm32f10x.o"
+#        "G:\Onedrive\OneDrive - Hue Industrial
+#        College\1.PKH\1.Project\16.STM32F1_W5500\1.Source\STM32_W5500_MQTT\EWARM\Debug\Obj\timer.o"
 #        "G:\Onedrive\OneDrive - Hue Industrial
 #        College\1.PKH\1.Project\16.STM32F1_W5500\1.Source\STM32_W5500_MQTT\EWARM\Debug\Obj\uart_debug.o"
 #        "G:\Onedrive\OneDrive - Hue Industrial
@@ -167,111 +171,109 @@ initialize by copy { rw };
   .intvec            ro code  0x08000000  0x150  startup_stm32f10x_cl.o [1]
                             - 0x08000150  0x150
 
-"P1":                                     0x7d3
-  .text              ro code  0x08000150  0x128  spi_74hc595.o [1]
-  .text              ro code  0x08000278   0x74  stm32f10x_spi.o [1]
-  .text              ro code  0x080002ec   0xe0  stm32f10x_rcc.o [1]
-  .text              ro code  0x080003cc   0xa2  stm32f10x_gpio.o [1]
-  .text              ro code  0x08000470   0x30  main.o [1]
-  .text              ro code  0x080004a0   0x88  uart_debug.o [1]
-  .text              ro code  0x08000528   0xc6  stm32f10x_usart.o [1]
-  .text              ro code  0x080005f0   0xfc  system_stm32f10x.o [1]
-  .text              ro code  0x080006ec   0x38  packbits_init_single.o [5]
-  .text              ro code  0x08000724   0x28  data_init.o [5]
-  .iar.init_table    const    0x0800074c   0x10  - Linker created -
-  .text              ro code  0x0800075c   0x1e  cmain.o [5]
-  .text              ro code  0x0800077a    0x4  low_level_init.o [3]
-  .text              ro code  0x0800077e    0x4  exit.o [3]
-  .text              ro code  0x08000784    0xa  cexit.o [5]
-  .text              ro code  0x08000790   0x14  exit.o [6]
-  .text              ro code  0x080007a4   0x10  mqtt_interface.o [1]
-  .text              ro code  0x080007b4   0x10  startup_stm32f10x_cl.o [1]
-  .text              ro code  0x080007c4    0xc  cstartup_M.o [5]
-  .text              ro code  0x080007d0    0x4  startup_stm32f10x_cl.o [1]
-  .text              ro code  0x080007d4    0x4  startup_stm32f10x_cl.o [1]
-  .text              ro code  0x080007d8    0x4  startup_stm32f10x_cl.o [1]
-  .text              ro code  0x080007dc    0x4  startup_stm32f10x_cl.o [1]
-  .text              ro code  0x080007e0    0x4  startup_stm32f10x_cl.o [1]
-  .text              ro code  0x080007e4    0x4  startup_stm32f10x_cl.o [1]
-  .text              ro code  0x080007e8    0x4  startup_stm32f10x_cl.o [1]
-  .text              ro code  0x080007ec    0x4  startup_stm32f10x_cl.o [1]
-  .text              ro code  0x080007f0    0x4  startup_stm32f10x_cl.o [1]
-  .text              ro code  0x080007f4    0x4  startup_stm32f10x_cl.o [1]
-  .text              ro code  0x080007f8    0x4  startup_stm32f10x_cl.o [1]
-  .text              ro code  0x080007fc    0x4  startup_stm32f10x_cl.o [1]
-  .text              ro code  0x08000800    0x4  startup_stm32f10x_cl.o [1]
-  .text              ro code  0x08000804    0x4  startup_stm32f10x_cl.o [1]
-  .text              ro code  0x08000808    0x4  startup_stm32f10x_cl.o [1]
-  .text              ro code  0x0800080c    0x4  startup_stm32f10x_cl.o [1]
-  .text              ro code  0x08000810    0x4  startup_stm32f10x_cl.o [1]
-  .text              ro code  0x08000814    0x4  startup_stm32f10x_cl.o [1]
-  .text              ro code  0x08000818    0x4  startup_stm32f10x_cl.o [1]
-  .text              ro code  0x0800081c    0x4  startup_stm32f10x_cl.o [1]
-  .text              ro code  0x08000820    0x4  startup_stm32f10x_cl.o [1]
-  .text              ro code  0x08000824    0x4  startup_stm32f10x_cl.o [1]
-  .text              ro code  0x08000828    0x4  startup_stm32f10x_cl.o [1]
-  .text              ro code  0x0800082c    0x4  startup_stm32f10x_cl.o [1]
-  .text              ro code  0x08000830    0x4  startup_stm32f10x_cl.o [1]
-  .text              ro code  0x08000834    0x4  startup_stm32f10x_cl.o [1]
-  .text              ro code  0x08000838    0x4  startup_stm32f10x_cl.o [1]
-  .text              ro code  0x0800083c    0x4  startup_stm32f10x_cl.o [1]
-  .text              ro code  0x08000840    0x4  startup_stm32f10x_cl.o [1]
-  .text              ro code  0x08000844    0x4  startup_stm32f10x_cl.o [1]
-  .text              ro code  0x08000848    0x4  startup_stm32f10x_cl.o [1]
-  .text              ro code  0x0800084c    0x4  startup_stm32f10x_cl.o [1]
-  .text              ro code  0x08000850    0x4  startup_stm32f10x_cl.o [1]
-  .text              ro code  0x08000854    0x4  startup_stm32f10x_cl.o [1]
-  .text              ro code  0x08000858    0x4  startup_stm32f10x_cl.o [1]
-  .text              ro code  0x0800085c    0x4  startup_stm32f10x_cl.o [1]
-  .text              ro code  0x08000860    0x4  startup_stm32f10x_cl.o [1]
-  .text              ro code  0x08000864    0x4  startup_stm32f10x_cl.o [1]
-  .text              ro code  0x08000868    0x4  startup_stm32f10x_cl.o [1]
-  .text              ro code  0x0800086c    0x4  startup_stm32f10x_cl.o [1]
-  .text              ro code  0x08000870    0x4  startup_stm32f10x_cl.o [1]
-  .text              ro code  0x08000874    0x4  startup_stm32f10x_cl.o [1]
-  .text              ro code  0x08000878    0x4  startup_stm32f10x_cl.o [1]
-  .text              ro code  0x0800087c    0x4  startup_stm32f10x_cl.o [1]
-  .text              ro code  0x08000880    0x4  startup_stm32f10x_cl.o [1]
-  .text              ro code  0x08000884    0x4  startup_stm32f10x_cl.o [1]
-  .text              ro code  0x08000888    0x4  startup_stm32f10x_cl.o [1]
-  .text              ro code  0x0800088c    0x4  startup_stm32f10x_cl.o [1]
-  .text              ro code  0x08000890    0x4  startup_stm32f10x_cl.o [1]
-  .text              ro code  0x08000894    0x4  startup_stm32f10x_cl.o [1]
-  .text              ro code  0x08000898    0x4  startup_stm32f10x_cl.o [1]
-  .text              ro code  0x0800089c    0x4  startup_stm32f10x_cl.o [1]
-  .text              ro code  0x080008a0    0x4  startup_stm32f10x_cl.o [1]
-  .text              ro code  0x080008a4    0x4  startup_stm32f10x_cl.o [1]
-  .text              ro code  0x080008a8    0x4  startup_stm32f10x_cl.o [1]
-  .text              ro code  0x080008ac    0x4  startup_stm32f10x_cl.o [1]
-  .text              ro code  0x080008b0    0x4  startup_stm32f10x_cl.o [1]
-  .text              ro code  0x080008b4    0x4  startup_stm32f10x_cl.o [1]
-  .text              ro code  0x080008b8    0x4  startup_stm32f10x_cl.o [1]
-  .text              ro code  0x080008bc    0x4  startup_stm32f10x_cl.o [1]
-  .text              ro code  0x080008c0    0x4  startup_stm32f10x_cl.o [1]
-  .text              ro code  0x080008c4    0x4  startup_stm32f10x_cl.o [1]
-  .text              ro code  0x080008c8    0x4  startup_stm32f10x_cl.o [1]
-  .text              ro code  0x080008cc    0x4  startup_stm32f10x_cl.o [1]
-  .text              ro code  0x080008d0    0x4  startup_stm32f10x_cl.o [1]
-  .text              ro code  0x080008d4    0x4  startup_stm32f10x_cl.o [1]
-  .text              ro code  0x080008d8    0x4  startup_stm32f10x_cl.o [1]
-  .text              ro code  0x080008dc    0x4  startup_stm32f10x_cl.o [1]
-  .text              ro code  0x080008e0    0x4  startup_stm32f10x_cl.o [1]
-  .rodata            const    0x080008e4    0x0  packbits_init_single.o [5]
-  Initializer bytes  const    0x080008e4   0x3f  <for P2-1>
-                            - 0x08000923  0x7d3
+"P1":                                     0xae2
+  .text              ro code  0x08000150  0x194  stm32f10x_tim.o [1]
+  .text              ro code  0x080002e4  0x128  spi_74hc595.o [1]
+  .text              ro code  0x0800040c   0x74  stm32f10x_spi.o [1]
+  .text              ro code  0x08000480   0xec  stm32f10x_rcc.o [1]
+  .text              ro code  0x0800056c   0xa2  stm32f10x_gpio.o [1]
+  .text              ro code  0x08000610   0x2c  main.o [1]
+  .text              ro code  0x0800063c   0x88  uart_debug.o [1]
+  .text              ro code  0x080006c4   0xac  timer.o [1]
+  .text              ro code  0x08000770   0xc6  stm32f10x_usart.o [1]
+  .text              ro code  0x08000838   0x6c  misc.o [1]
+  .text              ro code  0x080008a4   0xfc  system_stm32f10x.o [1]
+  .text              ro code  0x080009a0   0x6c  stm32f10x_it.o [1]
+  .text              ro code  0x08000a0c   0x38  packbits_init_single.o [5]
+  .text              ro code  0x08000a44   0x28  data_init.o [5]
+  .iar.init_table    const    0x08000a6c   0x10  - Linker created -
+  .text              ro code  0x08000a7c   0x1e  cmain.o [5]
+  .text              ro code  0x08000a9a    0x4  low_level_init.o [3]
+  .text              ro code  0x08000a9e    0x4  exit.o [3]
+  .text              ro code  0x08000aa4    0xa  cexit.o [5]
+  .text              ro code  0x08000ab0   0x14  exit.o [6]
+  .text              ro code  0x08000ac4   0x10  mqtt_interface.o [1]
+  .text              ro code  0x08000ad4   0x10  startup_stm32f10x_cl.o [1]
+  .text              ro code  0x08000ae4    0xc  cstartup_M.o [5]
+  .text              ro code  0x08000af0    0x4  startup_stm32f10x_cl.o [1]
+  .text              ro code  0x08000af4    0x4  startup_stm32f10x_cl.o [1]
+  .text              ro code  0x08000af8    0x4  startup_stm32f10x_cl.o [1]
+  .text              ro code  0x08000afc    0x4  startup_stm32f10x_cl.o [1]
+  .text              ro code  0x08000b00    0x4  startup_stm32f10x_cl.o [1]
+  .text              ro code  0x08000b04    0x4  startup_stm32f10x_cl.o [1]
+  .text              ro code  0x08000b08    0x4  startup_stm32f10x_cl.o [1]
+  .text              ro code  0x08000b0c    0x4  startup_stm32f10x_cl.o [1]
+  .text              ro code  0x08000b10    0x4  startup_stm32f10x_cl.o [1]
+  .text              ro code  0x08000b14    0x4  startup_stm32f10x_cl.o [1]
+  .text              ro code  0x08000b18    0x4  startup_stm32f10x_cl.o [1]
+  .text              ro code  0x08000b1c    0x4  startup_stm32f10x_cl.o [1]
+  .text              ro code  0x08000b20    0x4  startup_stm32f10x_cl.o [1]
+  .text              ro code  0x08000b24    0x4  startup_stm32f10x_cl.o [1]
+  .text              ro code  0x08000b28    0x4  startup_stm32f10x_cl.o [1]
+  .text              ro code  0x08000b2c    0x4  startup_stm32f10x_cl.o [1]
+  .text              ro code  0x08000b30    0x4  startup_stm32f10x_cl.o [1]
+  .text              ro code  0x08000b34    0x4  startup_stm32f10x_cl.o [1]
+  .text              ro code  0x08000b38    0x4  startup_stm32f10x_cl.o [1]
+  .text              ro code  0x08000b3c    0x4  startup_stm32f10x_cl.o [1]
+  .text              ro code  0x08000b40    0x4  startup_stm32f10x_cl.o [1]
+  .text              ro code  0x08000b44    0x4  startup_stm32f10x_cl.o [1]
+  .text              ro code  0x08000b48    0x4  startup_stm32f10x_cl.o [1]
+  .text              ro code  0x08000b4c    0x4  startup_stm32f10x_cl.o [1]
+  .text              ro code  0x08000b50    0x4  startup_stm32f10x_cl.o [1]
+  .text              ro code  0x08000b54    0x4  startup_stm32f10x_cl.o [1]
+  .text              ro code  0x08000b58    0x4  startup_stm32f10x_cl.o [1]
+  .text              ro code  0x08000b5c    0x4  startup_stm32f10x_cl.o [1]
+  .text              ro code  0x08000b60    0x4  startup_stm32f10x_cl.o [1]
+  .text              ro code  0x08000b64    0x4  startup_stm32f10x_cl.o [1]
+  .text              ro code  0x08000b68    0x4  startup_stm32f10x_cl.o [1]
+  .text              ro code  0x08000b6c    0x4  startup_stm32f10x_cl.o [1]
+  .text              ro code  0x08000b70    0x4  startup_stm32f10x_cl.o [1]
+  .text              ro code  0x08000b74    0x4  startup_stm32f10x_cl.o [1]
+  .text              ro code  0x08000b78    0x4  startup_stm32f10x_cl.o [1]
+  .text              ro code  0x08000b7c    0x4  startup_stm32f10x_cl.o [1]
+  .text              ro code  0x08000b80    0x4  startup_stm32f10x_cl.o [1]
+  .text              ro code  0x08000b84    0x4  startup_stm32f10x_cl.o [1]
+  .text              ro code  0x08000b88    0x4  startup_stm32f10x_cl.o [1]
+  .text              ro code  0x08000b8c    0x4  startup_stm32f10x_cl.o [1]
+  .text              ro code  0x08000b90    0x4  startup_stm32f10x_cl.o [1]
+  .text              ro code  0x08000b94    0x4  startup_stm32f10x_cl.o [1]
+  .text              ro code  0x08000b98    0x4  startup_stm32f10x_cl.o [1]
+  .text              ro code  0x08000b9c    0x4  startup_stm32f10x_cl.o [1]
+  .text              ro code  0x08000ba0    0x4  startup_stm32f10x_cl.o [1]
+  .text              ro code  0x08000ba4    0x4  startup_stm32f10x_cl.o [1]
+  .text              ro code  0x08000ba8    0x4  startup_stm32f10x_cl.o [1]
+  .text              ro code  0x08000bac    0x4  startup_stm32f10x_cl.o [1]
+  .text              ro code  0x08000bb0    0x4  startup_stm32f10x_cl.o [1]
+  .text              ro code  0x08000bb4    0x4  startup_stm32f10x_cl.o [1]
+  .text              ro code  0x08000bb8    0x4  startup_stm32f10x_cl.o [1]
+  .text              ro code  0x08000bbc    0x4  startup_stm32f10x_cl.o [1]
+  .text              ro code  0x08000bc0    0x4  startup_stm32f10x_cl.o [1]
+  .text              ro code  0x08000bc4    0x4  startup_stm32f10x_cl.o [1]
+  .text              ro code  0x08000bc8    0x4  startup_stm32f10x_cl.o [1]
+  .text              ro code  0x08000bcc    0x4  startup_stm32f10x_cl.o [1]
+  .text              ro code  0x08000bd0    0x4  startup_stm32f10x_cl.o [1]
+  .text              ro code  0x08000bd4    0x4  startup_stm32f10x_cl.o [1]
+  .text              ro code  0x08000bd8    0x4  startup_stm32f10x_cl.o [1]
+  .text              ro code  0x08000bdc    0x4  startup_stm32f10x_cl.o [1]
+  .rodata            const    0x08000be0    0x0  packbits_init_single.o [5]
+  Initializer bytes  const    0x08000be0   0x52  <for P2-1>
+                            - 0x08000c32  0xae2
 
-"P2", part 1 of 2:                         0x5c
-  P2-1                        0x20000000   0x5c  <Init block>
+"P2", part 1 of 2:                         0x98
+  P2-1                        0x20000000   0x98  <Init block>
     .data            inited   0x20000000   0x30  spi_74hc595.o [1]
     .data            inited   0x20000030   0x14  stm32f10x_rcc.o [1]
-    .bss             inited   0x20000044    0x4  mqtt_interface.o [1]
-    .bss             inited   0x20000048   0x14  spi_74hc595.o [1]
-                            - 0x2000005c   0x5c
+    .data            inited   0x20000044   0x14  system_stm32f10x.o [1]
+    .data            inited   0x20000058   0x20  timer.o [1]
+    .bss             inited   0x20000078    0x4  mqtt_interface.o [1]
+    .bss             inited   0x2000007c   0x14  spi_74hc595.o [1]
+    .bss             inited   0x20000090    0x8  stm32f10x_it.o [1]
+                            - 0x20000098   0x98
 
 "P2", part 2 of 2:                        0x400
-  CSTACK                      0x20000060  0x400  <Block>
-    CSTACK           uninit   0x20000060  0x400  <Block tail>
-                            - 0x20000460  0x400
+  CSTACK                      0x20000098  0x400  <Block>
+    CSTACK           uninit   0x20000098  0x400  <Block tail>
+                            - 0x20000498  0x400
 
 
 *******************************************************************************
@@ -281,10 +283,10 @@ initialize by copy { rw };
           Address     Size
           -------     ----
 Copy/packbits (__iar_packbits_init_single3)
-    1 source range, total size 0x3f (68% of destination):
-          0x080008e4  0x3f
-    1 destination range, total size 0x5c:
-          0x20000000  0x5c
+    1 source range, total size 0x52 (53% of destination):
+          0x08000be0  0x52
+    1 destination range, total size 0x98:
+          0x20000000  0x98
 
 
 
@@ -295,18 +297,22 @@ Copy/packbits (__iar_packbits_init_single3)
     Module                  ro code  ro data  rw data
     ------                  -------  -------  -------
 G:\Onedrive\OneDrive - Hue Industrial College\1.PKH\1.Project\16.STM32F1_W5500\1.Source\STM32_W5500_MQTT\EWARM\Debug\Obj: [1]
-    main.o                       48
-    mqtt_interface.o             16        3        4
-    spi_74hc595.o               296       46       68
-    startup_stm32f10x_cl.o      628
+    main.o                       44
+    misc.o                      108
+    mqtt_interface.o             16        2        4
+    spi_74hc595.o               296       36       68
+    startup_stm32f10x_cl.o      592
     stm32f10x_gpio.o            162
-    stm32f10x_rcc.o             224       14       20
+    stm32f10x_it.o              108        5        8
+    stm32f10x_rcc.o             236       11       20
     stm32f10x_spi.o             116
+    stm32f10x_tim.o             404
     stm32f10x_usart.o           198
-    system_stm32f10x.o          252
+    system_stm32f10x.o          252       11       20
+    timer.o                     172       17       32
     uart_debug.o                136
     -------------------------------------------------
-    Total:                    2 076       63       92
+    Total:                    2 840       82      152
 
 command line: [2]
     -------------------------------------------------
@@ -339,7 +345,7 @@ shb_l.a: [6]
     Gaps                          8
     Linker created                        16    1 024
 -----------------------------------------------------
-    Grand Total:              2 260       79    1 116
+    Grand Total:              3 024       98    1 176
 
 
 *******************************************************************************
@@ -348,57 +354,87 @@ shb_l.a: [6]
 
 Entry                      Address  Size  Type      Object
 -----                      -------  ----  ----      ------
-.iar.init_table$$Base   0x0800074c         --   Gb  - Linker created -
-.iar.init_table$$Limit  0x0800075c         --   Gb  - Linker created -
-?main                   0x0800075d        Code  Gb  cmain.o [5]
+.iar.init_table$$Base   0x08000a6c         --   Gb  - Linker created -
+.iar.init_table$$Limit  0x08000a7c         --   Gb  - Linker created -
+?main                   0x08000a7d        Code  Gb  cmain.o [5]
 ADCPrescTable           0x20000040   0x4  Data  Lc  stm32f10x_rcc.o [1]
+AHBPrescTable           0x20000044  0x10  Data  Gb  system_stm32f10x.o [1]
 APBAHBPrescTable        0x20000030  0x10  Data  Lc  stm32f10x_rcc.o [1]
-CSTACK$$Base            0x20000060         --   Gb  - Linker created -
-CSTACK$$Limit           0x20000460         --   Gb  - Linker created -
-GPIO_Init               0x080003cd  0x9a  Code  Gb  stm32f10x_gpio.o [1]
-GPIO_ResetBits          0x0800046b   0x4  Code  Gb  stm32f10x_gpio.o [1]
-GPIO_SetBits            0x08000467   0x4  Code  Gb  stm32f10x_gpio.o [1]
-MilliTimer              0x20000044   0x4  Data  Gb  mqtt_interface.o [1]
-RCC_APB1PeriphClockCmd  0x0800039d  0x16  Code  Gb  stm32f10x_rcc.o [1]
-RCC_APB2PeriphClockCmd  0x08000387  0x16  Code  Gb  stm32f10x_rcc.o [1]
-RCC_GetClocksFreq       0x080002fd  0x8a  Code  Gb  stm32f10x_rcc.o [1]
-RCC_PCLK2Config         0x080002ed  0x10  Code  Gb  stm32f10x_rcc.o [1]
-Region$$Table$$Base     0x0800074c         --   Gb  - Linker created -
-Region$$Table$$Limit    0x0800075c         --   Gb  - Linker created -
-SPI_Cmd                 0x080002b1  0x1a  Code  Gb  stm32f10x_spi.o [1]
-SPI_I2S_ITConfig        0x080002cb  0x1e  Code  Gb  stm32f10x_spi.o [1]
-SPI_I2S_SendData        0x080002e9   0x4  Code  Gb  stm32f10x_spi.o [1]
-SPI_Init                0x08000279  0x38  Code  Gb  stm32f10x_spi.o [1]
-SPI_InitStructure       0x20000048  0x14  Data  Gb  spi_74hc595.o [1]
-SetSysClock             0x08000631   0x2  Code  Lc  system_stm32f10x.o [1]
-SetSysClockTo72         0x08000633  0xa4  Code  Lc  system_stm32f10x.o [1]
-SysTick_Handler         0x080007a5   0xa  Code  Gb  mqtt_interface.o [1]
-SystemInit              0x080005f1  0x40  Code  Gb  system_stm32f10x.o [1]
-USART1Initialze         0x080004a1  0x80  Code  Gb  uart_debug.o [1]
-USART_Cmd               0x080005d5  0x1a  Code  Gb  stm32f10x_usart.o [1]
-USART_Init              0x08000529  0xa4  Code  Gb  stm32f10x_usart.o [1]
-__cmain                 0x0800075d        Code  Gb  cmain.o [5]
-__exit                  0x08000791  0x14  Code  Gb  exit.o [6]
-__iar_data_init3        0x08000725  0x28  Code  Gb  data_init.o [5]
+BusFault_Handler        0x080009a7   0x2  Code  Gb  stm32f10x_it.o [1]
+CCR1_Val                0x20000074   0x2  Data  Gb  timer.o [1]
+CSTACK$$Base            0x20000098         --   Gb  - Linker created -
+CSTACK$$Limit           0x20000498         --   Gb  - Linker created -
+DebugMon_Handler        0x080009ab   0x2  Code  Gb  stm32f10x_it.o [1]
+GPIO_Init               0x0800056d  0x9a  Code  Gb  stm32f10x_gpio.o [1]
+GPIO_ResetBits          0x0800060b   0x4  Code  Gb  stm32f10x_gpio.o [1]
+GPIO_SetBits            0x08000607   0x4  Code  Gb  stm32f10x_gpio.o [1]
+HardFault_Handler       0x080009a3   0x2  Code  Gb  stm32f10x_it.o [1]
+MemManage_Handler       0x080009a5   0x2  Code  Gb  stm32f10x_it.o [1]
+MilliTimer              0x20000078   0x4  Data  Gb  mqtt_interface.o [1]
+NMI_Handler             0x080009a1   0x2  Code  Gb  stm32f10x_it.o [1]
+NVIC_Configuration      0x080006c5  0x20  Code  Gb  timer.o [1]
+NVIC_Init               0x08000839  0x5a  Code  Gb  misc.o [1]
+PendSV_Handler          0x080009af   0x2  Code  Gb  stm32f10x_it.o [1]
+PrescalerValue          0x20000076   0x2  Data  Gb  timer.o [1]
+RCC_APB1PeriphClockCmd  0x0800053f  0x16  Code  Gb  stm32f10x_rcc.o [1]
+RCC_APB2PeriphClockCmd  0x08000529  0x16  Code  Gb  stm32f10x_rcc.o [1]
+RCC_GetClocksFreq       0x0800049f  0x8a  Code  Gb  stm32f10x_rcc.o [1]
+RCC_PCLK1Config         0x08000481   0xe  Code  Gb  stm32f10x_rcc.o [1]
+RCC_PCLK2Config         0x0800048f  0x10  Code  Gb  stm32f10x_rcc.o [1]
+Region$$Table$$Base     0x08000a6c         --   Gb  - Linker created -
+Region$$Table$$Limit    0x08000a7c         --   Gb  - Linker created -
+SPI_Cmd                 0x08000445  0x1a  Code  Gb  stm32f10x_spi.o [1]
+SPI_I2S_ITConfig        0x0800045f  0x1e  Code  Gb  stm32f10x_spi.o [1]
+SPI_I2S_SendData        0x0800047d   0x4  Code  Gb  stm32f10x_spi.o [1]
+SPI_Init                0x0800040d  0x38  Code  Gb  stm32f10x_spi.o [1]
+SPI_InitStructure       0x2000007c  0x14  Data  Gb  spi_74hc595.o [1]
+SVC_Handler             0x080009ad   0x2  Code  Gb  stm32f10x_it.o [1]
+SetSysClock             0x080008e5   0x2  Code  Lc  system_stm32f10x.o [1]
+SetSysClockTo72         0x080008e7  0xa4  Code  Lc  system_stm32f10x.o [1]
+SysTick_Handler         0x08000ac5   0xa  Code  Gb  mqtt_interface.o [1]
+SystemCoreClock         0x20000054   0x4  Data  Gb  system_stm32f10x.o [1]
+SystemInit              0x080008a5  0x40  Code  Gb  system_stm32f10x.o [1]
+TIM2_IRQHandler         0x080009b1  0x54  Code  Gb  stm32f10x_it.o [1]
+TIM_ClearITPendingBit   0x080002b7   0x6  Code  Gb  stm32f10x_tim.o [1]
+TIM_Cmd                 0x08000263  0x1a  Code  Gb  stm32f10x_tim.o [1]
+TIM_GetCapture1         0x0800029b   0x4  Code  Gb  stm32f10x_tim.o [1]
+TIM_GetITStatus         0x0800029f  0x18  Code  Gb  stm32f10x_tim.o [1]
+TIM_ITConfig            0x0800027d  0x14  Code  Gb  stm32f10x_tim.o [1]
+TIM_OC1Init             0x080001e1  0x82  Code  Gb  stm32f10x_tim.o [1]
+TIM_OCInitStructure     0x20000058  0x10  Data  Gb  timer.o [1]
+TIM_PrescalerConfig     0x08000291   0x6  Code  Gb  stm32f10x_tim.o [1]
+TIM_SetCompare1         0x08000297   0x4  Code  Gb  stm32f10x_tim.o [1]
+TIM_TimeBaseInit        0x08000151  0x90  Code  Gb  stm32f10x_tim.o [1]
+TIM_TimeBaseStructure   0x20000068   0xc  Data  Gb  timer.o [1]
+USART1Initialze         0x0800063d  0x80  Code  Gb  uart_debug.o [1]
+USART_Cmd               0x0800081d  0x1a  Code  Gb  stm32f10x_usart.o [1]
+USART_Init              0x08000771  0xa4  Code  Gb  stm32f10x_usart.o [1]
+UsageFault_Handler      0x080009a9   0x2  Code  Gb  stm32f10x_it.o [1]
+__cmain                 0x08000a7d        Code  Gb  cmain.o [5]
+__exit                  0x08000ab1  0x14  Code  Gb  exit.o [6]
+__iar_data_init3        0x08000a45  0x28  Code  Gb  data_init.o [5]
 __iar_packbits_init_single3
-                        0x080006ed  0x38  Code  Gb  packbits_init_single.o [5]
-__iar_program_start     0x080007c5        Code  Gb  cstartup_M.o [5]
+                        0x08000a0d  0x38  Code  Gb  packbits_init_single.o [5]
+__iar_program_start     0x08000ae5        Code  Gb  cstartup_M.o [5]
 __iar_systems$$module {Abs}
                         0x00000001        Data  Gb  command line/config [2]
-__low_level_init        0x0800077b   0x4  Code  Gb  low_level_init.o [3]
+__low_level_init        0x08000a9b   0x4  Code  Gb  low_level_init.o [3]
 __vector_table          0x08000000        Data  Gb  startup_stm32f10x_cl.o [1]
-_call_main              0x08000769        Code  Gb  cmain.o [5]
-_exit                   0x08000785        Code  Gb  cexit.o [5]
-_main                   0x08000777        Code  Gb  cmain.o [5]
-delay                   0x08000495   0xc  Code  Gb  main.o [1]
-display_number          0x080001fb  0x6c  Code  Gb  spi_74hc595.o [1]
-exit                    0x0800077f   0x4  Code  Gb  exit.o [3]
-init_gpio_spi           0x08000197  0x50  Code  Gb  spi_74hc595.o [1]
-init_spi2               0x08000151  0x46  Code  Gb  spi_74hc595.o [1]
-main                    0x08000471  0x24  Code  Gb  main.o [1]
-pin_cs_high             0x080001e7   0xa  Code  Gb  spi_74hc595.o [1]
-pin_cs_low              0x080001f1   0xa  Code  Gb  spi_74hc595.o [1]
+_call_main              0x08000a89        Code  Gb  cmain.o [5]
+_exit                   0x08000aa5        Code  Gb  cexit.o [5]
+_main                   0x08000a97        Code  Gb  cmain.o [5]
+capture                 0x20000090   0x2  Data  Gb  stm32f10x_it.o [1]
+delay                   0x08000631   0xc  Code  Gb  main.o [1]
+display_number          0x0800038f  0x6c  Code  Gb  spi_74hc595.o [1]
+exit                    0x08000a9f   0x4  Code  Gb  exit.o [3]
+init_gpio_spi           0x0800032b  0x50  Code  Gb  spi_74hc595.o [1]
+init_spi2               0x080002e5  0x46  Code  Gb  spi_74hc595.o [1]
+init_timer2             0x080006e5  0x80  Code  Gb  timer.o [1]
+main                    0x08000611  0x20  Code  Gb  main.o [1]
+pin_cs_high             0x0800037b   0xa  Code  Gb  spi_74hc595.o [1]
+pin_cs_low              0x08000385   0xa  Code  Gb  spi_74hc595.o [1]
 table_number_segment    0x20000000  0x30  Data  Gb  spi_74hc595.o [1]
+ui32_counter_timer2     0x20000094   0x4  Data  Gb  stm32f10x_it.o [1]
 
 
 [1] = G:\Onedrive\OneDrive - Hue Industrial College\1.PKH\1.Project\16.STM32F1_W5500\1.Source\STM32_W5500_MQTT\EWARM\Debug\Obj
@@ -408,9 +444,9 @@ table_number_segment    0x20000000  0x30  Data  Gb  spi_74hc595.o [1]
 [5] = rt7M_tl.a
 [6] = shb_l.a
 
-  2 260 bytes of readonly  code memory
-     79 bytes of readonly  data memory
-  1 116 bytes of readwrite data memory
+  3 024 bytes of readonly  code memory
+     98 bytes of readonly  data memory
+  1 176 bytes of readwrite data memory
 
 Errors: none
 Warnings: none
