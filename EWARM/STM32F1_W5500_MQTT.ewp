@@ -2334,6 +2334,12 @@
             <name>$PROJ_DIR$\net_config.h</name>
         </file>
         <file>
+            <name>$PROJ_DIR$\spi_74hc595.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\spi_74hc595.h</name>
+        </file>
+        <file>
             <name>$PROJ_DIR$\..\user\W5500HardwareDriver.c</name>
         </file>
         <file>

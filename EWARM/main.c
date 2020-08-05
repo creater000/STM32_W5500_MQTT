@@ -18,7 +18,7 @@
 #include <stdio.h>
 #include "net_config.h"
 #include "output_control.h"
-
+#include "spi_74hc595.h"
 
 
 
@@ -156,6 +156,10 @@ int main(void)
   RCC_PCLK2Config(RCC_HCLK_Div2);
   /*Usart initialization for Debug.*/
   USART1Initialze();
+  
+  init_gpio_spi();
+  init_spi2();
+  
   printf("USART initialized.\n\r");
   init_LED_output();
   init_buzzer();    
