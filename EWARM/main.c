@@ -159,7 +159,10 @@ int main(void)
   
   init_gpio_spi();
   init_spi2();
-  
+  while(1)
+  {
+    SPI_I2S_SendData(SPI_MASTER,0xAA);  
+  }
   printf("USART initialized.\n\r");
   init_LED_output();
   init_buzzer();    
